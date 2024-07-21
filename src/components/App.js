@@ -11,7 +11,7 @@ const App = () => {
   return (
     <div>
       <p>Enter Your name:</p>
-      <input type="text" onChange={handleInput}></input>
+      <input type="text" value={input} onChange={handleInput}></input>
       {input ? <p>Hello {input}!</p> : null}
     </div>
   );
