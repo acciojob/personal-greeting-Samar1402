@@ -10,9 +10,9 @@ const App = () => {
 
   return (
     <div>
-      <p>Enter Your name:</p>
+      <label>Enter Your name:</label>
       <input type="text" value={input} onChange={handleInput}></input>
-      {input ? <p>Hello {input}!</p> : null}
+      <p>{input.length > 0 && `Hello ${input}!`}</p>
     </div>
   );
 };
